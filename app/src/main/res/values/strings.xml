@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">EventListener3</string>
+    <string name="input_msg">Radius :</string>
+    <string name="input_example">e.g.,2</string>
+    <string name="empty_msg"> </string>
+    <string name="circular_area">Circular Area :</string>
+    <string name="calculate">Calculate</string>
+    <string name="clear">Clear</string>
 </resources>
