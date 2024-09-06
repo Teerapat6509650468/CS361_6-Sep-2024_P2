@@ -55,5 +55,13 @@ public class MainActivity extends AppCompatActivity {
                 output_text.setText(df.format(Math.PI*r_square));
             }
         });
+
+        final Button clear_btn = findViewById(R.id.clear_btn);
+        clear_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                output_text.setText("");
+            }
+        });
     }
 }
