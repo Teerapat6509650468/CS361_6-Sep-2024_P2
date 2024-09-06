@@ -34,8 +34,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onKey(View view, int i, KeyEvent keyEvent) {
                 if(keyEvent.getAction()==KeyEvent.ACTION_DOWN){
-                    output_text.setText(String.format("%s %s", output_text.getText(), radius_input.getText()));
-                    radius_input.setText("");
+                    if(i== KeyEvent.KEYCODE_ENTER) {
+                        output_text.setText(String.format("%s %s", output_text.getText(), radius_input.getText()));
+                        radius_input.setText("");
+                    }
                 }
                 return false;
             }
@@ -51,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
                     r_square = 0.0;
                 } else {
                     r_square = Float.parseFloat((radius_input.getText().toString()));
+                    r_square *= r_square;
                 }
                 output_text.setText(df.format(Math.PI*r_square));
             }
