@@ -18,6 +18,8 @@
             android:id="@+id/input_msg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:text="@string/input_msg"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
@@ -26,6 +28,7 @@
             style="@style/TextAppearance.AppCompat.Display1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
             android:ems="10"
             android:hint="@string/input_example"
             android:inputType="number"
@@ -34,15 +37,21 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/output_text"
+        style="@style/TextAppearance.AppCompat.Display1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/TextAppearance.AppCompat.Display1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
         android:text="@string/circular_area" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
         android:orientation="horizontal">
 
         <Button
